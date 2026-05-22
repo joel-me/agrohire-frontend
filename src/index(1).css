@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #f9fafb;
+    color: #1a1a1a;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 { font-family: 'Playfair Display', serif; }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium px-5 py-2.5 rounded-xl transition-all duration-200 shadow-sm hover:shadow-md active:scale-95;
+  }
+  .btn-secondary {
+    @apply bg-white hover:bg-gray-50 text-gray-700 font-medium px-5 py-2.5 rounded-xl border border-gray-200 transition-all duration-200 hover:border-primary-300 active:scale-95;
+  }
+  .btn-earth {
+    @apply bg-earth-500 hover:bg-earth-600 text-white font-medium px-5 py-2.5 rounded-xl transition-all duration-200 shadow-sm hover:shadow-md active:scale-95;
+  }
+  .card {
+    @apply bg-white rounded-2xl shadow-card p-6 border border-gray-100;
+  }
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:border-transparent text-sm transition-all duration-200 bg-white;
+  }
+  .badge-open      { @apply inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-green-700; }
+  .badge-pending   { @apply inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-yellow-100 text-yellow-700; }
+  .badge-accepted  { @apply inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700; }
+  .badge-rejected  { @apply inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-red-100 text-red-700; }
+  .badge-released  { @apply inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-700; }
+  .badge-completed { @apply inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-gray-100 text-gray-700; }
+}
+
+/* Animasi masuk */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeInUp { animation: fadeInUp 0.4s ease both; }
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
