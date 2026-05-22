@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { Sprout, Eye, EyeOff } from 'lucide-react'
-import api from '../lib/api'
+import api from '../lib/vite-env'
 import { saveAuth } from '../lib/auth'
 
 export default function LoginPage() {

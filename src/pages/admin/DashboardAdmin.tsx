@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Users, List, TrendingUp, CheckCircle, UserX } from 'lucide-react'
 import Navbar from '../../components/layout/Navbar'
-import api from '../../lib/api'
+import api from '../../lib/vite-env'
 import { formatRupiah } from '../../lib/format'
 
 export default function DashboardAdmin() {

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { ArrowLeft, Star, CheckCircle, XCircle } from 'lucide-react'
 import Navbar from '../../components/layout/Navbar'
-import api from '../../lib/api'
+import api from '../../lib/vite-env'
 import { statusBadgeClass, statusLabel } from '../../lib/format'
 
 export default function PelamarLowongan() {

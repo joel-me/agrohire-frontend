@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Search, MapPin, Briefcase, Star } from 'lucide-react'
 import Navbar from '../../components/layout/Navbar'
-import api from '../../lib/api'
+import api from '../../lib/vite-env'
 import { getUser } from '../../lib/auth'
 import { formatRupiah, formatDateShort } from '../../lib/format'
 

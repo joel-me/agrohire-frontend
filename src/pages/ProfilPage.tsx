@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import Navbar from '../components/layout/Navbar'
-import api from '../lib/api'
+import api from '../lib/vite-env'
 
 export default function ProfilPage() {
   const [profile, setProfile] = useState<any>(null)

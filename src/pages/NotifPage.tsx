@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Bell } from 'lucide-react'
 import Navbar from '../components/layout/Navbar'
-import api from '../lib/api'
+import api from '../lib/vite-env'
 
 export default function NotifPage() {
   const [notifs, setNotifs] = useState([])

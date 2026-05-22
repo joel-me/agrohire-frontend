@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { ArrowLeft } from 'lucide-react'
 import Navbar from '../../components/layout/Navbar'
-import api from '../../lib/api'
+import api from '../../lib/vite-env'
 
 const jobTypes = ['Panen', 'Tanam', 'Semprot', 'Pupuk', 'Bajak', 'Irigasi', 'Lainnya']
 

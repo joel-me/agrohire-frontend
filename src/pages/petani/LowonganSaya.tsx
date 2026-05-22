@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Plus, Users } from 'lucide-react'
 import Navbar from '../../components/layout/Navbar'
-import api from '../../lib/api'
+import api from '../../lib/vite-env'
 import { formatRupiah, formatDateShort, statusLabel, statusBadgeClass } from '../../lib/format'
 
 export default function LowonganSaya() {
