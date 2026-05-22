@@ -20,7 +20,8 @@ export default function BuatLowongan() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setError(''); setLoading(true)
+    setError('')
+    setLoading(true)
     try {
       await api.post('/listings', {
         ...form,
@@ -47,7 +48,9 @@ export default function BuatLowongan() {
           <h1 className="font-display text-2xl font-bold text-gray-900 mb-1">Buat Lowongan Baru</h1>
           <p className="text-sm text-gray-500 mb-7">Isi detail pekerjaan yang Anda butuhkan</p>
 
-          {error && <div className="bg-red-50 border border-red-200 text-red-700 text-sm rounded-xl px-4 py-3 mb-5">{error}</div>}
+          {error && (
+            <div className="bg-red-50 border border-red-200 text-red-700 text-sm rounded-xl px-4 py-3 mb-5">{error}</div>
+          )}
 
           <form onSubmit={handleSubmit} className="space-y-5">
             <div>
@@ -73,11 +76,13 @@ export default function BuatLowongan() {
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1.5">Kota *</label>
-                <input className="input-field" placeholder="Subang" value={form.city} onChange={e => set('city', e.target.value)} required />
+                <input className="input-field" placeholder="Subang"
+                  value={form.city} onChange={e => set('city', e.target.value)} required />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1.5">Provinsi</label>
-                <input className="input-field" placeholder="Jawa Barat" value={form.province} onChange={e => set('province', e.target.value)} />
+                <input className="input-field" placeholder="Jawa Barat"
+                  value={form.province} onChange={e => set('province', e.target.value)} />
               </div>
             </div>
 
@@ -90,11 +95,13 @@ export default function BuatLowongan() {
             <div className="grid grid-cols-3 gap-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1.5">Tanggal Mulai *</label>
-                <input type="date" className="input-field" value={form.startDate} onChange={e => set('startDate', e.target.value)} required />
+                <input type="date" className="input-field"
+                  value={form.startDate} onChange={e => set('startDate', e.target.value)} required />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1.5">Tanggal Selesai *</label>
-                <input type="date" className="input-field" value={form.endDate} onChange={e => set('endDate', e.target.value)} required />
+                <input type="date" className="input-field"
+                  value={form.endDate} onChange={e => set('endDate', e.target.value)} required />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1.5">Durasi (hari) *</label>
