@@ -91,10 +91,6 @@ export default function LoginPage() {
             </p>
           </div>
 
-          {/* Demo accounts */}
-          <div className="mt-4 bg-gray-50 rounded-xl p-4">
-            <p className="text-xs font-semibold text-gray-500 mb-2 uppercase tracking-wide">Akun Demo</p>
-          </div>
         </div>
       </div>
     </div>
