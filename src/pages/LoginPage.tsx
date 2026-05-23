@@ -94,11 +94,6 @@ export default function LoginPage() {
           {/* Demo accounts */}
           <div className="mt-4 bg-gray-50 rounded-xl p-4">
             <p className="text-xs font-semibold text-gray-500 mb-2 uppercase tracking-wide">Akun Demo</p>
-            <div className="space-y-1 text-xs text-gray-600">
-              <div className="flex justify-between"><span>Petani:</span><span className="font-mono">petani@demo.com / demo123</span></div>
-              <div className="flex justify-between"><span>Buruh:</span><span className="font-mono">buruh@demo.com / demo123</span></div>
-              <div className="flex justify-between"><span>Admin:</span><span className="font-mono">admin@agrohire.id / demo123</span></div>
-            </div>
           </div>
         </div>
       </div>
