@@ -150,7 +150,7 @@ export default function LandingPage() {
           <Sprout className="w-4 h-4 text-primary-400" />
           <span className="text-white font-semibold">AgroHire</span>
         </div>
-        <p>© 2024 AgroHire · Skripsi Joel Alwan Sembiring (2381048) · Universitas Advent Indonesia</p>
+        <p>© 2026 AgroHire · Skripsi Joel Alwan Sembiring · Universitas Advent Indonesia</p>
       </footer>
     </div>
   )
